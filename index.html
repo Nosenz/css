@@ -1,105 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Ivan CV</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>From 0 To Top</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="info">
-
-            <img src="ava.jpg" alt="Здесь Картинка" class="avatar">
-            <div class="info-text">      
-                <h1>Иван Зеленцов</h1>
-                <p>Я только начал учить <strong>frontend</strong></p>
-                <p>Это мой первый проект, который я пишу по памяти, позаимствовав только структуру</p>
-
-                <h4>Мои социальные сети</h4>
-                <a href="https://t.me/vspxvff" target="_blank">Telegram</a>
+            <img src="itsme.jpg" alt="My Picture" class="ava">
+            
+            <div class="info-text">
+                <h1>Ivan Zelentsov</h1>
+                <p>Hello! My name is Ivan, and I try to doing my personal page here</p>
+                <p>This site just a test of my knowledges</p>
+                <h4>My Socials</h4>
+                <a href="https://t.me/vspxvff">Telegram</a>
                 |
             </div>
         </div>
 
-        <div class="card bg-yellow">
-            <h2>Мои увлечения</h2>
+        <div class="card bg-violet">
+            <h2>About me</h2>
+            <p>I'm from Moscow and I have a big dream about my future. I want to build my personal brand which will be famous all over the world and it'll be based on my music</p>
+            <p>Also I've several hobbies:</p>
+            <ul class="list" type="square">
+                <li>Programming</li>
+                <li>Sport</li>
+                <li>Music Instruments</li>
+                <li>Travelling</li>
+                <li>Snowboarding</li>
+            </ul>
+            <p>The main one at the moment is programming. And right now you're looking at the result that I've achieved in one week</p>
+            <p>I decided to learn JavaScript language and have currently learned HTML and CSS which is a stepping stone to something more</p>
+            <p><strong>My roadmap:</strong></p>
             <ol class="list">
-                <li>Музыка</li>
-                <li>Спорт</li>
-                <li>Программирование</li>
-                <li>Путешествия</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
             </ol>
         </div>
-
-        <div class="card bg-green">
-            <h2>Опыт работы</h2>
+        
+        <div class="card bg-yellow">
+            <h2>Rules for life</h2>
             <table class="table">
                 <tr>
-                    <td>Home</td>
-                    <td>Content Maker</td>
-                    <td>2016 - 2017</td>
+                    <td>Stay Focused</td>
+                    <td>When you have a plan and you see the other shore, it's much easier to swim this way</td>
+                    <td>Notice the results</td>
                 </tr>
                 <tr>
-                    <td>SoundCloud</td>
-                    <td>Producer</td>
-                    <td>2017 - 2021</td>
+                    <td>Be True</td>
+                    <td>When you are you then you relieve yourself of the need to carry a bunch of masks with you</td>
+                    <td>It will be hard at first</td>
                 </tr>
                 <tr>
-                    <td>Spotify</td>
-                    <td>Producer / Beatmaker</td>
-                    <td>2021 - 2024</td>
-                </tr>
-                <tr>
-                    <td>Selfmade</td>
-                    <td>Driver</td>
-                    <td>2024 - now</td>
+                    <td>Do It For Yourself</td>
+                    <td>When you're doing it for yourself you're only competing with yourself</td>
+                    <td>Stay focused</td>
                 </tr>
             </table>
         </div>
 
-        <div class="card bg-red">
-            <h2>Сайт с работами</h2>
+        <div class="card bg-green">
+            <h2>Materials For Study</h2>
             <ul class="link-list">
                 <li>
-                    <a href="https://learn.javascript.ru/?map" target="_blank">Язык JavaScript</a>
+                    <a href="">HTML</a>
                 </li>
                 <li>
-                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">Здесь должно быть Ютуб-видео</a>
+                    <a href="">CSS</a>
+                </li>
+                <li>
+                    <a href="">JS</a>
                 </li>
             </ul>
-            </div>
+        </div>
 
-                <div class="contact">
-                    <h2>Контакты</h2>
-                    <form action="">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="name">Ваше имя: </label>
-                                <input type="text" id="name" placeholder="Введите ваше имя">
-                            </div>
+        <div class="contacts">
+            <h2>Contacts</h2>
 
-                            <div class="form-group">
-                                <label for="email">Ваш email:</label>
-                                <input type="text" id="email" placeholder="Введите ваш email">
+            <form action="">
+            
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Type Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Type Your email">
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="text">Ваше сообщение:</label>
-                <textarea id="text" rows="5" cols="15" placeholder="Напишите сюда ваше мнение"></textarea>
+            <label for="text">Your Review:</label>
+            <textarea id="text" rows="5" cols="20" placeholder="Your message here..."></textarea>
             </div>
 
-            <input class="btn" type="submit" value="Поделиться">
-
+            <input type="button" class="btn" value="Send">
             </form>
         </div>
-        
+
         <div class="position">
-            <div class="box"></div>
+            <div class="box">
+                <a href="https://developer.mozilla.org/ru/docs/Web/CSS/:hover" target="_blank" class="box"></a>
+            </div>
         </div>
     </div>
 
-
-    <div style="margin-bottom: 500px"></div>
+    <div style="margin-bottom: 500px;"></div>
 </body>
 </html>

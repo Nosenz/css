@@ -1,109 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* * {
-    padding: 0;
-    margin: 0;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
-    background-color: #f1f1f1;
-    color: #0f141e;
+    background-color: rgba(137, 43, 226, 0.466);
+    color: black;
 
-    font-size: 16px;
-    font-weight: normal;
-    font-family: 'Roboto', sans-serif;
-
-    /* font: normal 16px 'Roboto', sans-serif; */
-
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Oswald", sans-serif;
 }
 
-a {
-   color: black;
-   text-decoration: none; 
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 20px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    color: blue;
-}
-
-a:visited {
-    color: grey;
-}
-
-.avatar {
-    height: 200px;
-    width: 200px;
-    border-radius: 28px;
-}
+/* head block */
 
 .info {
     display: flex;
     margin-bottom: 20px;
 }
 
-@media (max-width: 700px) {
-    .info {
-        text-align: center;
-        display: block;
-    }
+.ava {
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
 }
 
 .info-text {
     margin-left: 40px;
 }
 
-.info-text h4 {
-    margin-bottom: 10px;
+.info h1 {
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .info p {
-    color: #86898f;
-    margin: 0;
+    color: rgba(0, 0, 0, 0.623);
     font-style: italic;
     font-weight: bold;
     text-decoration: none;
+    margin: 0;
 }
 
-.container {
-    max-width: 750px;
-    margin: auto;
-    padding-top: 30px;
+.info-text h4 {
+    margin: 0;
+    padding: 10px 0 5px;    
+}
+
+.bg-violet {
+    background-color: rgb(173, 104, 238);
 }
 
 .bg-yellow {
-    background: #fff9dc;
+    background-color: lightgoldenrodyellow;
 }
 
 .bg-green {
-    background: #e5ffe7;
-}
-
-.bg-red {
-    background: #ffe5e5;
-}
-
-.card {
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    background-color: lightgreen;
 }
 
 .card h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.card {
+    padding: 5px 30px;
+    margin-bottom: 15px;
+    border-radius: 20px;
 }
 
 .list {
-    padding: 0 20px;
+    padding: 0 50px;
 }
 
 .list li {
-    color: #86898f;
-    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.623);
 }
 
 .table {
@@ -111,16 +85,12 @@ a:visited {
 }
 
 .table td {
-    padding-bottom: 10px;
+    padding: 30px;
 }
 
 .table td:nth-child(2), .table td:nth-child(3) {
-    color: #86898f;
+    color: rgba(0, 0, 0, 0.623);
 }
-
-/* .table tr:nth-child(odd) {
-    background: red;
-} */
 
 .link-list {
     list-style: none;
@@ -129,18 +99,35 @@ a:visited {
 
 .link-list li {
     margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    border-bottom: 1px solid rgb(255, 251, 0);
 }
 
-.contact h2 {
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.527);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: aliceblue;
+}
+
+a:visited {
+    color: rgb(118, 0, 173);
+}
+
+.contacts h2 {
     text-align: center;
 }
 
 .form-group label {
     display: block;
-    font-size: 14px;
-    color: #86898f;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.527);
 }
 
 .form-group input, .form-group textarea {
@@ -148,12 +135,14 @@ a:visited {
     box-sizing: border-box;
     border: none;
     background: transparent;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.527);
     color: #000;
     padding: 15px 0 10px;
     outline: none;
     font-family: inherit;
+    font-size: 20px;
 }
+
 .row {
     display: flex;
     margin-bottom: 20px;
@@ -164,38 +153,33 @@ a:visited {
     margin-right: 20px;
 }
 
-.row > .form-group:last-child {
-    margin-right: 0;
-}
-
 .btn {
-    background: #111;
-    padding: 15px 20px;
+    background: #000;
     color: #fff;
+    padding: 10px 40px;
     border: none;
     font-family: inherit;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .btn:hover {
     opacity: 0.9;
 }
 
-/* .position {
-    position: relative;
-    border: 4px solid black;
-    margin-top: 40px;
-    padding: 20px;
-    height: 300px;
+.box {
+    position:fixed;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid royalblue;
+    background: transparent;
 }
 
-.box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 150px;
-    left: 0px;
-    width: 100%;
-    height: 50px;
-    background: lightcoral;
-} */
+.box:hover {
+    opacity: 0.7;
+    border-color: rgb(255, 251, 0);
+    background: greenyellow;
+}
